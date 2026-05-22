@@ -18,8 +18,18 @@ Duas camadas:
    (hot cache: buffer e sessões) e PostgreSQL (persistência fria). Exposto via túnel HTTPS
    na porta `5678` para receber webhooks de portais externos.
 
-Fluxo de dados de produção:
+Fluxo automatizado-alvo (agente SDR — **adiado** para fase futura):
 `Visitante LP → Evolution API → n8n → Redis Buffer → PostgreSQL → OpenRouter (Claude Sonnet) → WhatsApp do Lead`
+
+### Fábrica vs. Produto — distinção fundamental
+
+- **A Fábrica** — ativos da própria agência para captar e converter clientes: a Landing Page
+  e a ferramenta de auditoria de prospecção (`outbound/`). É o foco da Fase 1. Ver `SDD.md`.
+- **O Produto** — o "Recuperador de Leads" e demais soluções verticais entregues *dentro* da
+  operação do cliente (workflow n8n). Será projetado em `SDD-produto.md` ao fechar a 1ª PoC.
+
+A camada n8n/Redis/PostgreSQL pertence ao Produto e está **fora do escopo da Fase 1** — que
+roda sem servidor (apenas Vercel + Python local).
 
 ## 2. Estrutura de diretórios
 
@@ -116,6 +126,8 @@ Fluxo padrão de entrega: `@Architect` → `@GrowthCopywriter` → `@SkepticalQA
 ## 7. Processo de engenharia
 
 - **SDD primeiro**: nenhum código de produção antes do design estar em `SDD.md`.
+- **Roadmap vivo**: no início de cada sessão, ler `ROADMAP.md` para identificar o estado
+  atual. Toda entrega atualiza o `ROADMAP.md` (status + linha "Estado atual") no mesmo commit.
 - Trabalho dividido em fases; aguardar validação humana em cada checkpoint importante.
 - Não pular etapas do roteiro de fases.
 
