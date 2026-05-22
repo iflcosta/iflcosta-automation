@@ -4,9 +4,11 @@
 
 ## Estado atual
 
-> **Fase 1 · Construção da Fábrica** — Tarefas 1 e 2 concluídas (CLAUDE.md, SDD.md).
-> **Próximo:** Tarefa 3 — scaffold do frontend Next.js, com `@SkepticalQA` escrevendo os
-> testes que falham antes da implementação.
+> **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas (CLAUDE.md, SDD.md,
+> Design Brief da landing em `docs/design-brief-landing.md`).
+> **Próximo passo manual:** gerar o protótipo da landing no Claude Design a partir do brief.
+> **Próxima tarefa:** Tarefa 3b — scaffold do frontend Next.js (TDD), consumindo o protótipo
+> aprovado.
 
 ## Como manter este arquivo vivo
 
@@ -25,6 +27,8 @@
 | 2026-05-22 | Agente SDR próprio **adiado** — Fase 1 sem servidor (só Vercel + Python local) |
 | 2026-05-22 | Posicionamento: PMEs de Bragança em geral; verticais (imobiliária, clínica, comércio) como portas de entrada |
 | 2026-05-22 | Landing única multi-vertical + seção "Soluções por segmento" |
+| 2026-05-22 | Adicionado `@UXDesigner` ao time de subagentes (CLAUDE.md §6) |
+| 2026-05-22 | Protótipo da landing gerado no Claude Design a partir de Design Brief escrito (`docs/design-brief-landing.md`); Tarefa 3 dividida em 3a (brief) e 3b (implementação) |
 
 ## Fase 1 — Construção da Fábrica
 
@@ -32,7 +36,8 @@
 |---|--------|-------------|--------|
 | 1 | `CLAUDE.md` — convenções de engenharia | `@Architect` | ✅ |
 | 2 | `SDD.md` — design da Fábrica (arc42) | `@Architect` | ✅ |
-| 3 | Frontend: scaffold Next.js + Landing Page (TDD) | `@SkepticalQA` → `@FrontendDev` | ⬜ |
+| 3a | Design Brief + copy da Landing Page | `@UXDesigner` + `@GrowthCopywriter` | ✅ |
+| 3b | Frontend: scaffold Next.js + Landing Page (TDD, consome protótipo) | `@SkepticalQA` → `@FrontendDev` | ⬜ |
 | 4 | `outbound/auditoria_pagespeed.py` (TDD) | `@SkepticalQA` → `@WorkflowEngineer` | ⬜ |
 
 ## Fases futuras (resumo — detalhar quando ativadas)

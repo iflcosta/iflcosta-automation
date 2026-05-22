@@ -116,12 +116,14 @@ Toda proposta ou alteração de arquivo deve indicar qual subagente a propõe/re
 |--------|------------------|
 | `@Architect` | Schemas PostgreSQL, config Redis, segurança de credenciais, túnel HTTPS :5678 |
 | `@FrontendDev` | Código Next.js/Tailwind/React. Garante Lighthouse mobile > 95/100 |
+| `@UXDesigner` | Design Brief, arquitetura de informação, protótipo (handoff p/ Claude Design), QA visual |
 | `@WorkflowEngineer` | Lógica JSON dos workflows n8n, buffer inteligente, persistência híbrida |
 | `@SkepticalQA` | Testes que quebram a aplicação (TDD), cenários adversariais, revisão final |
 | `@GrowthCopywriter` | Headlines de conversão, roteiro de voz/áudio do SDR, mensagens de outbound |
 
-Fluxo padrão de entrega: `@Architect` → `@GrowthCopywriter` → `@SkepticalQA` (teste falha)
-→ `@FrontendDev`/`@WorkflowEngineer` (implementação mínima) → `@SkepticalQA` (revisão).
+Fluxo padrão de entrega: `@Architect` → `@GrowthCopywriter` → `@UXDesigner` → `@SkepticalQA`
+(teste falha) → `@FrontendDev`/`@WorkflowEngineer` (implementação mínima) → `@SkepticalQA`
+(revisão).
 
 ## 7. Processo de engenharia
 
