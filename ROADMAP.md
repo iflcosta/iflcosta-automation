@@ -4,12 +4,13 @@
 
 ## Estado atual
 
-> **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas. Protótipo da landing
-> recebido do Claude Design e salvo em `docs/prototype/` (commit a confirmar).
-> **Aguardando:** confirmação de branding ("Iago Lopes" vs. outro) e número de WhatsApp
-> real, antes de iniciar a Tarefa 3b.
-> **Próxima tarefa:** Tarefa 3b — scaffold do frontend Next.js (TDD), migrando o protótipo
-> para Server Components + Tailwind.
+> **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas. Tarefa 3b iniciada:
+> scaffold Next.js 15 + TypeScript + Tailwind + Vitest em `frontend/` e primeiro ciclo TDD
+> do Hero (4 testes verdes, build OK).
+> **Branding fixado:** `Iago Lopes | Hardware & Tech`. WhatsApp via `NEXT_PUBLIC_WA_NUMBER`
+> (placeholder `5511919691542`).
+> **Próximo:** ciclos TDD das demais seções — Prova de dor, Soluções, Como funciona,
+> Programa Fundador, CTA final, Nav, Footer.
 
 ## Como manter este arquivo vivo
 
@@ -39,7 +40,7 @@
 | 1 | `CLAUDE.md` — convenções de engenharia | `@Architect` | ✅ |
 | 2 | `SDD.md` — design da Fábrica (arc42) | `@Architect` | ✅ |
 | 3a | Design Brief + copy da Landing Page | `@UXDesigner` + `@GrowthCopywriter` | ✅ |
-| 3b | Frontend: scaffold Next.js + Landing Page (TDD, consome protótipo) | `@SkepticalQA` → `@FrontendDev` | ⬜ |
+| 3b | Frontend: scaffold Next.js + Landing Page (TDD, consome protótipo) | `@SkepticalQA` → `@FrontendDev` | 🔄 |
 | 4 | `outbound/auditoria_pagespeed.py` (TDD) | `@SkepticalQA` → `@WorkflowEngineer` | ⬜ |
 
 ## Fases futuras (resumo — detalhar quando ativadas)
