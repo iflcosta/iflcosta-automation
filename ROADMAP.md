@@ -4,13 +4,13 @@
 
 ## Estado atual
 
-> **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas. Tarefa 3b iniciada:
-> scaffold Next.js 15 + TypeScript + Tailwind + Vitest em `frontend/` e primeiro ciclo TDD
-> do Hero (4 testes verdes, build OK).
-> **Branding fixado:** `Iago Lopes | Hardware & Tech`. WhatsApp via `NEXT_PUBLIC_WA_NUMBER`
-> (placeholder `5511919691542`).
-> **Próximo:** ciclos TDD das demais seções — Prova de dor, Soluções, Como funciona,
-> Programa Fundador, CTA final, Nav, Footer.
+> **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas. Tarefa 3b com landing
+> completa em TDD: Nav + Hero + Pain + Solutions + How + Social + FinalCTA + Footer
+> integrados em `app/page.tsx`. **33 testes verdes.** Build static prerender, 100 kB
+> First Load JS — toda renderização no servidor, zero JS client-side.
+> **Branding:** `Iago Lopes | Hardware & Tech`. WhatsApp via `NEXT_PUBLIC_WA_NUMBER`.
+> **Próximo:** polish visual contra o protótipo (mockup de chat no Hero, ajustes finos)
+> e deploy no Vercel pra teste mobile.
 
 ## Como manter este arquivo vivo
 
