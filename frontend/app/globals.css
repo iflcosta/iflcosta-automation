@@ -2,25 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg: 244 242 236;
+  --surface: 255 255 255;
+  --ink: 11 20 24;
+  --brand: 79 70 229;
+  --accent: 37 211 102;
+  --border: 11 20 24;
+  --chat-bg: 236 229 221;
+  --chat-bubble-them: 255 255 255;
+  --chat-bubble-us: 220 248 198;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: 11 14 16;
+    --surface: 22 26 32;
+    --ink: 230 232 234;
+    --brand: 129 140 248;
+    --accent: 37 211 102;
+    --border: 255 255 255;
+    --chat-bg: 17 20 24;
+    --chat-bubble-them: 36 41 48;
+    --chat-bubble-us: 26 64 38;
+  }
+}
+
 html {
   scroll-behavior: smooth;
+  background-color: rgb(var(--bg));
 }
 
 body {
-  background-color: theme('colors.bone');
-  color: theme('colors.ink');
+  color: rgb(var(--ink));
   font-family: theme('fontFamily.sans');
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *,
-  *::before,
-  *::after {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;

@@ -26,11 +26,11 @@ export function How() {
         {steps.map((step, i) => (
           <li
             key={step.titulo}
-            className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-ink/5"
+            className="rounded-2xl bg-surface p-6 shadow-sm ring-1 ring-border/10"
           >
             <span
               aria-hidden="true"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-deep text-base font-semibold text-white"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand text-base font-semibold text-white"
             >
               {i + 1}
             </span>

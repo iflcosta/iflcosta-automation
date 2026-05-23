@@ -31,7 +31,7 @@ export function Solutions() {
         {cards.map((card) => (
           <li
             key={card.titulo}
-            className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-ink/5"
+            className="rounded-2xl bg-surface p-6 shadow-sm ring-1 ring-border/10"
           >
             <h3 className="text-lg font-semibold text-ink">{card.titulo}</h3>
             <p className="mt-2 text-sm text-ink/70">{card.descricao}</p>

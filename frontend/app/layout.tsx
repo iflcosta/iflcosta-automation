@@ -9,21 +9,22 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
+const title = 'Iago Lopes | Tech & IA — Automação que atende no WhatsApp';
 const description =
   'Sua empresa demora a responder e o cliente vai pro concorrente. Automação com IA que atende, qualifica e agenda em segundos, 24h por dia.';
 
 export const metadata: Metadata = {
-  title: 'Iago Lopes | Hardware & Tech — Automação que atende no WhatsApp',
+  title,
   description,
   openGraph: {
-    title: 'Iago Lopes | Hardware & Tech',
+    title: 'Iago Lopes | Tech & IA',
     description,
     locale: 'pt_BR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Iago Lopes | Hardware & Tech',
+    title: 'Iago Lopes | Tech & IA',
     description,
   },
 };
@@ -31,7 +32,10 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: '#0F2A43',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#F4F2EC' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a0e10' },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
