@@ -5,12 +5,11 @@
 ## Estado atual
 
 > **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas. Tarefa 3b com landing
-> completa em TDD: Nav + Hero + Pain + Solutions + How + Social + FinalCTA + Footer
-> integrados em `app/page.tsx`. **33 testes verdes.** Build static prerender, 100 kB
-> First Load JS — toda renderização no servidor, zero JS client-side.
+> completa em TDD: Nav + Hero (com ChatMockup) + Pain + Solutions + How + Social + FinalCTA
+> + Footer. **33 testes verdes.** Build static prerender, 100 kB First Load JS. Viewport e
+> Open Graph configurados; `prefers-reduced-motion` honrado.
 > **Branding:** `Iago Lopes | Hardware & Tech`. WhatsApp via `NEXT_PUBLIC_WA_NUMBER`.
-> **Próximo:** polish visual contra o protótipo (mockup de chat no Hero, ajustes finos)
-> e deploy no Vercel pra teste mobile.
+> **Próximo:** deploy no Vercel pra teste mobile (via integração GitHub).
 
 ## Como manter este arquivo vivo
 
