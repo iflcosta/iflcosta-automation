@@ -4,11 +4,12 @@
 
 ## Estado atual
 
-> **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas (CLAUDE.md, SDD.md,
-> Design Brief da landing em `docs/design-brief-landing.md`).
-> **Próximo passo manual:** gerar o protótipo da landing no Claude Design a partir do brief.
-> **Próxima tarefa:** Tarefa 3b — scaffold do frontend Next.js (TDD), consumindo o protótipo
-> aprovado.
+> **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas. Protótipo da landing
+> recebido do Claude Design e salvo em `docs/prototype/` (commit a confirmar).
+> **Aguardando:** confirmação de branding ("Iago Lopes" vs. outro) e número de WhatsApp
+> real, antes de iniciar a Tarefa 3b.
+> **Próxima tarefa:** Tarefa 3b — scaffold do frontend Next.js (TDD), migrando o protótipo
+> para Server Components + Tailwind.
 
 ## Como manter este arquivo vivo
 
@@ -29,6 +30,7 @@
 | 2026-05-22 | Landing única multi-vertical + seção "Soluções por segmento" |
 | 2026-05-22 | Adicionado `@UXDesigner` ao time de subagentes (CLAUDE.md §6) |
 | 2026-05-22 | Protótipo da landing gerado no Claude Design a partir de Design Brief escrito (`docs/design-brief-landing.md`); Tarefa 3 dividida em 3a (brief) e 3b (implementação) |
+| 2026-05-23 | Protótipo recebido do Claude Design (`docs/prototype/`); React+Babel via CDN, copy fiel ao brief; serve só como referência visual para a implementação em Next.js da Tarefa 3b |
 
 ## Fase 1 — Construção da Fábrica
 
