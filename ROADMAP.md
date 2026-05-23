@@ -4,12 +4,18 @@
 
 ## Estado atual
 
-> **Fase 1 · Construção da Fábrica** — Tarefas 1, 2 e 3a concluídas. Tarefa 3b com landing
-> completa em TDD: Nav + Hero (com ChatMockup) + Pain + Solutions + How + Social + FinalCTA
-> + Footer. **33 testes verdes.** Build static prerender, 100 kB First Load JS. Viewport e
-> Open Graph configurados; `prefers-reduced-motion` honrado.
-> **Branding:** `Iago Lopes | Hardware & Tech`. WhatsApp via `NEXT_PUBLIC_WA_NUMBER`.
-> **Próximo:** deploy no Vercel pra teste mobile (via integração GitHub).
+> **Fase 1 · Construção da Fábrica — CONCLUÍDA.**
+> - Landing IA (`ia.iflcosta.tech`) em Next.js 16 + Tailwind, 35 testes verdes, build estático.
+> - Portal (`iflcosta.tech`) e Hardware (`hardware.iflcosta.tech`) integrados sob identidade
+>   visual unificada (indigo, wordmark "Iago Lopes").
+> - Admin (`ia.iflcosta.tech/admin`) com Supabase Auth: scaffold mínimo de login + dashboard
+>   placeholder. CRUD modela quando 1ª PoC fechar.
+> - **Tarefa 4: `outbound/auditoria_pagespeed.py`** — ferramenta de prospecção em Python,
+>   18 testes verdes, gera relatório JSON + mensagem fria parametrizada por vertical
+>   (imobiliaria/clinica/comercio/outras) com LCP/CLS/Speed Index/score reais.
+>
+> **Próximo:** entrar na **Fase 2 — Prospecção ativa**. Usar `auditoria_pagespeed.py` para
+> abordar PMEs de Bragança; fechar 1ª PoC do Programa Fundador.
 
 ## Como manter este arquivo vivo
 
@@ -43,7 +49,7 @@
 | 2 | `SDD.md` — design da Fábrica (arc42) | `@Architect` | ✅ |
 | 3a | Design Brief + copy da Landing Page | `@UXDesigner` + `@GrowthCopywriter` | ✅ |
 | 3b | Frontend: scaffold Next.js + Landing Page (TDD, consome protótipo) | `@SkepticalQA` → `@FrontendDev` | 🔄 |
-| 4 | `outbound/auditoria_pagespeed.py` (TDD) | `@SkepticalQA` → `@WorkflowEngineer` | ⬜ |
+| 4 | `outbound/auditoria_pagespeed.py` (TDD) | `@SkepticalQA` → `@WorkflowEngineer` | ✅ |
 
 ## Fases futuras (resumo — detalhar quando ativadas)
 
