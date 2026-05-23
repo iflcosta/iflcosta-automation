@@ -22,10 +22,10 @@ export function ChatMockup() {
       <div className="rounded-[28px] bg-surface shadow-xl ring-1 ring-border/10 overflow-hidden">
         <div className="flex items-center gap-3 px-4 py-3 bg-brand text-white">
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-sm font-semibold">
-            IL
+            IS
           </div>
           <div className="leading-tight">
-            <div className="text-sm font-semibold">Iago Lopes · Atendimento</div>
+            <div className="text-sm font-semibold">Imobiliária Sant'Ana</div>
             <div className="text-xs text-white/70 flex items-center gap-1.5">
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" />
               online · responde em segundos
