@@ -1,0 +1,23 @@
+# Artefatos gerados (regeneráveis a partir das fontes versionadas)
+*.zip
+
+# Ambientes Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+
+# Sistema operacional / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
