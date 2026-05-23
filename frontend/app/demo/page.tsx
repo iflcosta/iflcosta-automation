@@ -14,18 +14,25 @@ export const metadata = {
 export default function DemoPage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="border-b border-border/10 px-6 h-14 flex items-center justify-between bg-bg/80 backdrop-blur">
-        <Link href="/" className="flex items-center gap-3 group">
-          <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-brand text-[10px] font-bold tracking-wider text-white">
+      <header className="border-b border-border/10 px-6 h-14 flex items-center justify-between gap-3 bg-bg/80 backdrop-blur">
+        <Link
+          href="/"
+          aria-label="Voltar para ia.iflcosta.tech"
+          className="inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium text-ink/70 ring-1 ring-border/15 hover:text-ink hover:ring-border/30 transition"
+        >
+          <span aria-hidden>←</span>
+          <span className="hidden sm:inline">Voltar para o site</span>
+          <span className="sm:hidden">Voltar</span>
+        </Link>
+        <div className="flex items-center gap-2 min-w-0">
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-brand text-[10px] font-bold tracking-wider text-white">
             IL
           </span>
-          <span className="flex flex-col leading-tight">
-            <span className="text-sm font-semibold text-ink group-hover:underline">
-              Iago Lopes
-            </span>
-            <span className="text-[11px] text-ink/55">Tech & IA · demo</span>
+          <span className="hidden sm:flex flex-col leading-tight min-w-0">
+            <span className="text-sm font-semibold text-ink truncate">Iago Lopes</span>
+            <span className="text-[11px] text-ink/55 truncate">Tech & IA · demo</span>
           </span>
-        </Link>
+        </div>
         <a
           href={WA_URL}
           className="text-xs font-semibold rounded-full bg-accent px-4 py-1.5 text-ink hover:brightness-95"
@@ -52,7 +59,49 @@ export default function DemoPage() {
 
         <ChatDemo />
 
-        <section className="mt-16 max-w-2xl mx-auto rounded-2xl bg-surface ring-1 ring-border/10 p-6">
+        <section className="mt-16 max-w-3xl mx-auto">
+          <div className="text-center">
+            <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-3 py-1 text-xs font-medium text-ink/80">
+              Não é só pra imobiliária
+            </span>
+            <h2 className="mt-4 text-2xl md:text-3xl font-bold tracking-tight text-ink">
+              Mesmo motor, qualquer segmento.
+            </h2>
+            <p className="mt-3 text-sm md:text-base text-ink/70 max-w-xl mx-auto">
+              A imobiliária é só um exemplo. O agente assume a persona, as regras e a base
+              de conhecimento do seu negócio — atendendo, qualificando e agendando 24h por dia.
+            </p>
+          </div>
+
+          <ul className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <li className="rounded-2xl bg-surface ring-1 ring-border/10 p-5">
+              <div className="text-sm font-semibold text-ink">Imobiliárias</div>
+              <p className="mt-1 text-xs text-ink/65">
+                Qualifica bairro, quartos, faixa de preço. Agenda visita com o corretor.
+              </p>
+            </li>
+            <li className="rounded-2xl bg-surface ring-1 ring-border/10 p-5">
+              <div className="text-sm font-semibold text-ink">Clínicas e consultórios</div>
+              <p className="mt-1 text-xs text-ink/65">
+                Marca consulta, confirma convênio, lembra o paciente um dia antes.
+              </p>
+            </li>
+            <li className="rounded-2xl bg-surface ring-1 ring-border/10 p-5">
+              <div className="text-sm font-semibold text-ink">Comércio e serviços</div>
+              <p className="mt-1 text-xs text-ink/65">
+                Tira dúvida de produto, manda catálogo, encaminha pedido pro vendedor.
+              </p>
+            </li>
+            <li className="rounded-2xl bg-surface ring-1 ring-border/10 p-5">
+              <div className="text-sm font-semibold text-ink">Agências e prestadores</div>
+              <p className="mt-1 text-xs text-ink/65">
+                Recebe briefing, qualifica budget e prazo, agenda call com o time.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section className="mt-12 max-w-2xl mx-auto rounded-2xl bg-surface ring-1 ring-border/10 p-6">
           <h2 className="text-base font-semibold text-ink">Como funciona pra valer</h2>
           <ul className="mt-3 space-y-2 text-sm text-ink/70 list-disc list-inside">
             <li>Mesmo motor de IA do que entrego pra clientes.</li>

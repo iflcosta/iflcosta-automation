@@ -21,12 +21,21 @@ export function Hero() {
             agenda em segundos, 24 horas por dia.
           </p>
           <div className="mt-8 flex flex-col items-center md:items-start gap-3">
-            <a
-              href={WA_URL}
-              className="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 text-base font-semibold text-ink shadow-sm transition hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
-            >
-              Quero meu diagnóstico gratuito
-            </a>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+              <a
+                href={WA_URL}
+                className="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 text-base font-semibold text-ink shadow-sm transition hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              >
+                Quero meu diagnóstico gratuito
+              </a>
+              <a
+                href="/demo"
+                className="inline-flex items-center gap-2 rounded-full bg-surface ring-1 ring-border/20 px-6 py-4 text-base font-semibold text-ink transition hover:ring-border/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
+              >
+                <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                Testar o agente ao vivo
+              </a>
+            </div>
             <p className="text-sm text-ink/55">
               Conversa direta no WhatsApp. Sem formulário, sem compromisso.
             </p>

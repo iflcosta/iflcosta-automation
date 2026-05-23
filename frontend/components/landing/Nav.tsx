@@ -1,4 +1,4 @@
-import { AGENCY_NAME, AGENCY_ROLE, WA_URL, HARDWARE_URL } from '@/lib/config';
+import { AGENCY_NAME, AGENCY_ROLE, WA_URL, PORTAL_URL } from '@/lib/config';
 
 export function Nav() {
   return (
@@ -13,12 +13,21 @@ export function Nav() {
             <span className="text-[11px] font-medium text-ink/60 truncate">{AGENCY_ROLE}</span>
           </span>
         </div>
-        <div className="flex items-center gap-3 md:gap-5">
+        <div className="flex items-center gap-2 md:gap-3">
           <a
-            href={HARDWARE_URL}
-            className="hidden md:inline text-xs text-ink/60 hover:text-ink transition"
+            href={PORTAL_URL}
+            aria-label="Voltar para o portal iflcosta.tech"
+            className="hidden sm:inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium text-ink/70 ring-1 ring-border/15 hover:text-ink hover:ring-border/30 transition"
           >
-            ← outras frentes
+            <span aria-hidden>←</span>
+            <span>Portal</span>
+          </a>
+          <a
+            href="/demo"
+            className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold text-ink ring-1 ring-border/20 hover:ring-border/40 transition"
+          >
+            <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+            Demo
           </a>
           <a
             href={WA_URL}
