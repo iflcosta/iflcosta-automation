@@ -33,6 +33,7 @@
 | 2026-05-23 | Protótipo recebido do Claude Design (`docs/prototype/`); React+Babel via CDN, copy fiel ao brief; serve só como referência visual para a implementação em Next.js da Tarefa 3b |
 | 2026-05-23 | Arquitetura de domínio definida: apex `iflcosta.tech` → portal (`portal/`, estático), `hardware.iflcosta.tech` → projeto `iflcosta-tech`, `ia.iflcosta.tech` → projeto `iflcosta-automation` |
 | 2026-05-23 | Identidade visual unificada nos 3 sites: marca-mãe "Iago Lopes" (portal: "Hardware, Tech & IA"; IA: "Tech & IA"), paleta indigo `#4F46E5` (do Hardware), wordmark estruturado (mono "IL" + 2 linhas), dark mode via `prefers-color-scheme` |
+| 2026-05-23 | Admin do produto IA mora em `ia.iflcosta.tech/admin` (mesmo padrão do Hardware), Supabase Auth com cookies, schema reusando `iflcosta's Project` (antigas tabelas do Hardware zeradas). Scaffold mínimo: login + middleware + dashboard placeholder. CRUD vem quando 1ª PoC fechar. |
 
 ## Fase 1 — Construção da Fábrica
 
