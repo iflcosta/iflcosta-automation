@@ -31,6 +31,7 @@
 | 2026-05-22 | Adicionado `@UXDesigner` ao time de subagentes (CLAUDE.md §6) |
 | 2026-05-22 | Protótipo da landing gerado no Claude Design a partir de Design Brief escrito (`docs/design-brief-landing.md`); Tarefa 3 dividida em 3a (brief) e 3b (implementação) |
 | 2026-05-23 | Protótipo recebido do Claude Design (`docs/prototype/`); React+Babel via CDN, copy fiel ao brief; serve só como referência visual para a implementação em Next.js da Tarefa 3b |
+| 2026-05-23 | Arquitetura de domínio definida: apex `iflcosta.tech` → portal (`portal/`, estático), `hardware.iflcosta.tech` → projeto `iflcosta-tech`, `ia.iflcosta.tech` → projeto `iflcosta-automation` |
 
 ## Fase 1 — Construção da Fábrica
 
