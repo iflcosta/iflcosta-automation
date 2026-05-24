@@ -164,6 +164,64 @@ html, body {
 .card-hardware { border-top: 4px solid var(--brand); }
 .card-ia { border-top: 4px solid var(--accent); }
 
+/* Stretched link pattern — card inteiro clicável mesmo sem ser <a> */
+.card-stretch {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: 1;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.card:has(.card-stretch:focus-visible) {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+.card-actions {
+  margin-top: auto;
+  padding-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-demo {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  background: var(--bg);
+  outline: 1px solid var(--border);
+  text-decoration: none;
+  transition: outline-color 180ms ease, transform 120ms ease;
+}
+.card-demo:hover,
+.card-demo:focus-visible {
+  outline-color: var(--brand);
+  transform: translateY(-1px);
+}
+.card-demo-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: card-demo-pulse 1.6s ease-in-out infinite;
+}
+@keyframes card-demo-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
 /* Footer */
 .foot {
   margin-top: auto;

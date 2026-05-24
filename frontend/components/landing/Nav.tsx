@@ -23,13 +23,6 @@ export function Nav() {
             <span>Portal</span>
           </a>
           <a
-            href="/demo"
-            className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold text-ink ring-1 ring-border/20 hover:ring-border/40 transition"
-          >
-            <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-            Demo
-          </a>
-          <a
             href={WA_URL}
             className="inline-flex items-center justify-center rounded-full bg-accent px-4 py-2 text-sm font-semibold text-ink transition hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand"
           >
